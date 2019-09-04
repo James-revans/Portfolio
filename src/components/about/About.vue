@@ -57,9 +57,12 @@ export default {
         }
     }
     &__bio {
-        font-size: 1em;
+        font-size: 1.2em;
         max-width: 400px;
-        margin: 10% auto;       
+        margin: 10% auto;   
+        @media only screen and (max-width: 800px) {
+            font-size: 0.75em;
+        }    
     }
     .divider {
         height: 5px;

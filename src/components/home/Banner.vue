@@ -78,9 +78,9 @@
                 </div>
             </div>
 
-            <div class="banner__container__caption ssPro">
+            <div class="banner__container__caption pontano">
                 <h1>James Evans</h1>
-                <h2>Front-end Web Developer</h2>
+                <h2>Front End Web Developer</h2>
             </div>
             <div class="banner__container__arrow p-3"><i class="fas fa-arrow-down"></i></div>
             <div class="banner__container__border"></div>
@@ -104,10 +104,8 @@ export default {
             this.scrolled = window.scrollY > 0;
             var a = window.scrollY;
             var viewPortWidth = window.innerWidth;
-            console.log(a);
+             
             
-            if(viewPortWidth > 800) {
-            }
             if(a < this.bannerHeight) {
                 this.isActive = false;
             }
@@ -119,6 +117,7 @@ export default {
     created () {
         window.addEventListener('scroll', this.handleScroll);
         this.bannerHeight = 2*window.innerHeight;
+       
     },
     destroyed () {
         window.removeEventListener('scroll', this.handleScroll);
@@ -198,18 +197,19 @@ export default {
                 animation: cloud 15s infinite linear;
         z-index: 1;
         border-radius: 50%;
+        overflow-x: hidden;
         @media only screen and (max-width: 800px) {
                 transform: scale(0.5);
             }
     }
     @-webkit-keyframes cloud {
         0%   { left: -100px; }
-        100% { left: 90vw; } 
+        100% { left: 88vw; } 
     }
     @keyframes cloud {
     
         0%   { left: -100px; }
-        100% { left: 90vw; } 
+        100% { left: 88vw; } 
     }
 
     .cloud-two {
@@ -217,6 +217,7 @@ export default {
         -webkit-animation: cloud-two 30s infinite linear;
                 animation: cloud-two 30s infinite linear;
         z-index: 2;
+        overflow-x: hidden;
     }
     @-webkit-keyframes cloud-two {
         0%   { right: 0px; }
@@ -230,7 +231,7 @@ export default {
     &__container {
         position: fixed;
         height: 100vh;  
-        width: 100vw;
+        width: 100%;
 
         h1 {
             font-size: 60px;
@@ -240,6 +241,8 @@ export default {
             position: absolute;
             bottom: 25px;
             right: 1300px;
+            
+            
             @media only screen and (max-width: 800px) {
                 transform: scale(0.4);
                 right: 500px;
@@ -270,6 +273,7 @@ export default {
                 bottom: -50px;
                 opacity: 0.7;
                 z-index: 0;
+                
             }
             .mountain-shadow-one, .mountain-shadow-two, .mountain-shadow-three {
                 position: absolute;
@@ -475,11 +479,11 @@ export default {
         }
         &__border {
             background: rgb(255, 255, 255);
-            height: 200px;
+            height: 120px;
             width: 100%;
             z-index: 5;
             position: absolute;
-            bottom: -200px;
+            bottom: -120px;
         }
     }
     .stay{

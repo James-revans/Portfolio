@@ -1,7 +1,7 @@
 <template>
-    <b-row class='skills m-0'>
+    <b-row class='skills mb-5'>
         <b-col cols="12 text-center pt-5">
-            <h3>Skills</h3>
+            <h3>Front End Stack</h3>
         </b-col>
         <b-col class="py-5">
             <SkillsLogo/>
@@ -29,7 +29,7 @@ export default {
     background: #000E30;
     h3 {
         color: #ffffff;
-        font-size: 50px;
+        font-size: 40px;
     }
 }
 

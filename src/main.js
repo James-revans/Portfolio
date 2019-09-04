@@ -12,7 +12,7 @@ Vue.use(BootstrapVue);
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-
+import '@/assets/scss/all.scss'
 //import 'sal.js/dist/sal.css';
 
 Vue.config.productionTip = false
