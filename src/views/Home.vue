@@ -1,21 +1,22 @@
 <template>
-  <div>
-    <Banner/>
-    <About/>
-    <Projects/>
+  <div class="home">
+    <!-- <Banner/> -->
+    <Skyline/>
+    <div class="content">
+      <About/>
+      <Projects/>
+    </div>
+
   </div>
 </template>
 
 <script>
-
-import Banner from '@/components/home/Banner';
 import Skyline from '@/components/skyline/Skyline';
 import About from '@/components/about/About';
 import Projects from '@/components/projects/Projects';
 
 export default {
   components: {
-    Banner,
     Skyline,
     About,
     Projects
@@ -25,5 +26,15 @@ export default {
 </script>
 
 <style lang="scss">
+
+.home {
+  background: white;
+  .content {
+    background: white;
+    position: relative;
+  }
+
+}
+
 
 </style>

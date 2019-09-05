@@ -33,7 +33,7 @@ export default {
     left: 0;
     bottom: 0;
     width: 100vw;
-    z-index: -2;
+    
     &__building-three {
         background: rgb(101, 94, 104);
     }
