@@ -1,15 +1,18 @@
 <template>
-    <div class="d-flex skill-icons pb-5" 
+    <div class="d-flex flex-wrap skill-icons" 
     data-sal="slide-up"
     data-sal-delay="300"
     data-sal-duration="500"
     data-sal-easing="ease-out-bounce">
     <div class="skill-icons__icon"><i class="fab fa-html5"></i><p>HTML5</p></div>
-    <div class="skill-icons__icon"><i class="fab fa-css3-alt"></i><p>CSS/Sass</p></div>
+    <div class="skill-icons__icon"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+    <div class="skill-icons__icon"><i class="fab fa-sass"></i><p>Sass</p></div>
+    <div class="skill-icons__icon"><i class="fab fa-bootstrap"></i><p>Bootstrap</p></div>
     <div class="skill-icons__icon"><i class="fab fa-js-square"></i><p>JavaScript</p></div>
     <div class="skill-icons__icon"><i class="fab fa-vuejs"></i><p>Vue.js</p></div>
-    <div class="skill-icons__icon"><i class="fab fa-bootstrap"></i><p>Bootstrap</p></div>
-    
+    <div class="skill-icons__icon"><i class="fab fa-node"></i><p>Node.js</p></div>
+    <div class="skill-icons__icon"><i class="fab fa-git-alt"></i><p>Git</p></div>
+    <div class="skill-icons__icon"><i class="fab fa-figma"></i><p>Figma</p></div>
     </div>
 </template>
 
@@ -36,6 +39,8 @@ export default {
     &__icon {
         position: relative;
         transition: 0.4s;
+        padding: 10px;
+        margin-bottom: 15px;
         &:hover {
             transform: scale(1.2);
             transition: 0.2s;

@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="pontano">
+  <div id="app" class="roboto">
     <router-view/>
   </div>
 </template>

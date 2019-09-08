@@ -1,7 +1,7 @@
 <template>
     <div class='projects m-0'>
         <div class="text-center pt-3 pt-sm-5">
-            <h2>Projects</h2>
+            <h2>PROJECTS</h2>
         </div>
         <div class="justify-content-center py-5">
             <ProjectBlade v-for="(item, index) in projectData" :key="index"

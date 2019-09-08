@@ -1,27 +1,21 @@
 <template>
-    <div class="about">
-        <h2 class="pb-5 text-center">About me</h2>
-        <b-row class="py-5 m-0 d-flex align-items-center">
-            <b-col cols="12" sm="6" class="about__james py-3">  
-                <div class="about__james__circle"></div>
-            </b-col>
-            <b-col cols="12" sm="6">
-                <p class="about__bio p-1 p-sm-3">
-                    Hi! I'm James Evans, a front-end web developer from Seattle, Washington. I'm currently a developer at Qudo Creative where I have contributed to the design and development of projects.
-                </p>
-                <b-col cols="9" class="divider mb-5"></b-col>
-            </b-col>
-        </b-row>
-        <Skills/>
+    <div class="about d-md-flex align-items-center">
+        <div class="about__photo">
+            <img src='../../assets/james.png'>
+        </div>
+        <div class="about__text">
+            <h1>ABOUT ME</h1>
+            
+            <p>Hi! I'm James Evans, a front-end web developer from Seattle, Washington. I'm currently a developer at Qudo Creative where I have contributed to the design and development of projects.</p>
+        </div>
     </div>
 </template>
 <script>
 
-import Skills from "@/components/about/Skills";
 export default {
     components: {
-        Skills
-    }   
+
+    }
 }
 </script>
 
@@ -29,45 +23,49 @@ export default {
 .about {
     background: #ffffff;
     height: 100%;
-    width: 100%;
-    padding-top: 15vh;
+    width: 100vw;
+    padding-top: 150px;
 
-    h2 {
-        color: #003249;
-        font-size: 50px;
+    @media only screen and (max-width: 800px) {
+        padding-top: 50px;
     }
 
-    &__divide {
-        height: 5px;
-        background: #007ea7;
-    }
-    &__james {
-        &__circle {
-            margin: 0 auto;
-            width: 300px;
-            height: 300px;
-            border-radius: 100%;
-            z-index: 1000;
-            color: transparent;
-            background-image: url('../../assets/james.png');
-            background-size: cover;
-            background-position-x: -10px;
+    &__photo {
+        width: 40%;
+        text-align: center;
+        img {
+            width: 80%;
             transform: rotate(90deg);
+            
         }
-    }
-    &__bio {
-        font-size: 1.2em;
-        max-width: 400px;
-        margin: 10% auto;   
         @media only screen and (max-width: 800px) {
-            font-size: 0.75em;
-        }    
+            width: 100%;
+            padding-bottom: 150px;
+        }   
     }
-    .divider {
-        height: 5px;
-        background: #003249;
+
+    &__text {
         margin: 0 auto;
-        
+        font-size: 20px;
+        width: 60%;
+
+        p {
+            border-top: solid thick black;
+            padding-top: 20px;
+
+        }
+        p, h1 {
+            margin: 0 15%;
+            @media only screen and (max-width: 800px) {
+                width: 80%;
+                margin: 0 auto;
+            }    
+        }
+        @media only screen and (max-width: 800px) {
+            width: 100%;
+            
+            
+        }
     }
     
 }
