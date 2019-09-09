@@ -1,10 +1,10 @@
 <template>
     <div class="landscape" id="parallax-container-landscape">
         
+        <div class="hill-four p-landscape"></div>
         <div class="hill-three p-landscape"></div>
-        <div class="plane p-landscape"></div>
-        <div class="hill-one p-landscape"></div>
         <div class="hill-two p-landscape"></div>
+        <div class="hill-one p-landscape"></div>
 
 
         <div class="trees">
@@ -48,23 +48,44 @@
 import Mountains from "@/components/home/Mountains";
 
 
-window.addEventListener('scroll', () => {
-  let parent = document.getElementById('parallax-container-landscape');
-  let children = parent.getElementsByClassName('p-landscape');
-  for(let i = 0; i < children.length; i++) {
-    // children[i].style.transform = 'translateY(' + (window.pageYOffset * (1 * i) / children.length) + 'px)';
-    children[i].style.transform = 'translateY(' + (window.pageYOffset / (1 * (i+1)) / children.length) + 'px)';
-    children[0].style.transform = 'translateY(' + (window.pageYOffset / (2) / children.length) + 'px)';
-    children[1].style.transform = 'translateY(' + (window.pageYOffset / (1.8) / children.length) + 'px)';
+// window.addEventListener('scroll', () => {
+//   let parent = document.getElementById('parallax-container-landscape');
+//   let children = parent.getElementsByClassName('p-landscape');
+//   for(let i = 0; i < children.length; i++) {
+//     // children[i].style.transform = 'translateY(' + (window.pageYOffset * (1 * i) / children.length) + 'px)';
+//     children[i].style.transform = 'translateY(' + (window.pageYOffset / (1 * (i+1)) / children.length) + 'px)';
+//     children[0].style.transform = 'translateY(' + (window.pageYOffset / (2) / children.length) + 'px)';
+//     children[1].style.transform = 'translateY(' + (window.pageYOffset / (1.8) / children.length) + 'px)';
 
-  }
-}, false)
+//   }
+// }, false)
 
 
 export default {
+    props: ["stopScroll"],
     components: {
         Mountains
-    }
+    },
+
+    methods: {
+        handleScroll() {
+            console.log(this.stopScroll);
+            if(!this.stopScroll) {
+                let parent = document.getElementById('parallax-container-landscape');
+                let children = parent.getElementsByClassName('p-landscape');
+                for(let i = 0; i < children.length; i++) {
+                    // children[i].style.transform = 'translateY(' + (window.pageYOffset * (1 * i) / children.length) + 'px)';
+                    children[i].style.transform = 'translateY(' + (window.pageYOffset / (1 * (i+1)) / children.length) + 'px)';
+                    children[0].style.transform = 'translateY(' + (window.pageYOffset / (2) / children.length) + 'px)';
+                    children[1].style.transform = 'translateY(' + (window.pageYOffset / (1.8) / children.length) + 'px)';
+                }
+            }
+        }
+    },
+
+    created () {
+        window.addEventListener('scroll', this.handleScroll);  
+    },
     
 }
 </script>
@@ -72,70 +93,74 @@ export default {
 <style lang="scss">
 .landscape {
     width: 100%;
-    height: 200px;
+    height: 60%;
     background: rgb(0, 94, 0)45;
     position: absolute;
     bottom: 0;
     left: 0;
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 480px) {
         // height: 45px;
     }
 
-    .plane {
+
+
+
+    .hill-one {
         width: 100%;
-        height: 500px;
-        background: #6b8d45;
+        height: 40%;
+        background: #87b158;
         position: absolute;
-        bottom: -100px;
+        bottom: 0;
         left: 0;
         border-top-right-radius: 100%;
         z-index: 0;
-        @media only screen and (max-width: 800px) {
-            width: 150%;
-            bottom: -200px;
+        @media only screen and (min-width: 1024px) {
+            height: 50%;
         }
     }
-    .hill-one {
-        width: 100%;
-        height: 500px;
+
+    .hill-two {
+        width: 130%;
+        height: 50%;
         background: #7ca34f;
         position: absolute;
-        bottom: -200px;
+        bottom: 0;
         right: 0;
         border-top-left-radius: 100%;
         z-index: 0;
-        @media only screen and (max-width: 800px) {
-            width: 150%;
-            bottom: -300px;
-        }
-    }
-    .hill-two {
-        width: 100%;
-        height: 500px;
-        background: #87b158;
-        position: absolute;
-        bottom: -290px;
-        left: 0;
-        border-top-right-radius: 100%;
-        z-index: 0;
-        @media only screen and (max-width: 800px) {
-            width: 150%;
-            bottom: -350px;
+        @media only screen and (min-width: 1024px) {
+            height: 60%;
+            width: 100%;
         }
     }
     .hill-three {
-        width: 100%;
-        height: 500px;
+        width: 150%;
+        height: 80%;
+        background: #6b8d45;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top-right-radius: 100%;
+        z-index: 0;
+        @media only screen and (min-width: 1024px) {
+            height: 98%;
+            width: 100%;
+        }
+    }
+    .hill-four {
+        width: 150%;
+        height: 85%;
         background: #63813f;
         position: absolute;
-        bottom: -80px;
+        bottom: 0;
         right: 0;
         border-top-left-radius: 100%;
         z-index: 0;
-        @media only screen and (max-width: 800px) {
-            width: 150%;
-            bottom: -200px;
+        @media only screen and (min-width: 1024px) {
+            height: 100%;
+            width: 100%;
+
         }
     }
     .trees {

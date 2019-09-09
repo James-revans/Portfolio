@@ -4,8 +4,7 @@
             <div class="blade__img__link">
                 <a target="_blank" v-bind:href="url">Visit Site</a>
             </div>
-            <img class="" :src="img">
-
+            <img class="" :src="getImgUrl()">
         </div>
         <div class="blade__description">
             <p>{{ description }}</p>
@@ -20,6 +19,11 @@ export default {
     data() {
         return {
             
+        }
+    },
+    methods: {
+        getImgUrl() {
+            return require('../../assets/images/' + this.img)
         }
     }
     
@@ -40,6 +44,7 @@ export default {
         img {
             width: 100%;
             border-radius: 15px;
+            border: solid 2px gray;
             
         }
 

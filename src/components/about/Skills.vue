@@ -30,7 +30,7 @@ export default {
     width: 100%;
     h3 {
         color: #ffffff;
-        font-size: 40px;
+        font-size: 45px;
     }
 }
 

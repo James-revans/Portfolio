@@ -34,7 +34,7 @@ export default {
 .projects {
     h2 {
         color: #003249;
-        font-size: 50px;
+        font-size: 45px;
     }
 }
 </style>

@@ -1,12 +1,14 @@
 <template>
-    <div class="about d-md-flex align-items-center">
-        <div class="about__photo">
-            <img src='../../assets/james.png'>
-        </div>
+    <div class="about d-flex align-items-center">
+
         <div class="about__text">
             <h1>ABOUT ME</h1>
             
             <p>Hi! I'm James Evans, a front-end web developer from Seattle, Washington. I'm currently a developer at Qudo Creative where I have contributed to the design and development of projects.</p>
+            <button class="about__text__button">CONTACT</button>
+        </div>
+        <div class="about__photo">
+            <img src='../../assets/images/james-cutout-BW.png'>
         </div>
     </div>
 </template>
@@ -24,48 +26,58 @@ export default {
     background: #ffffff;
     height: 100%;
     width: 100vw;
-    padding-top: 150px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 480px) {
         padding-top: 50px;
     }
 
     &__photo {
-        width: 40%;
+        position: relative;
+        width: 65%;
         text-align: center;
+        margin: 0 auto; 
+        z-index: 0;
+        margin-bottom: -90px;
+        
         img {
-            width: 80%;
-            transform: rotate(90deg);
-            
-        }
-        @media only screen and (max-width: 800px) {
             width: 100%;
-            padding-bottom: 150px;
+        }
+        @media only screen and (max-width: 1024px) {
+            width: 100%;
+            padding-top: 60px;
+
         }   
     }
 
     &__text {
-        margin: 0 auto;
+        margin: 0 10%;
         font-size: 20px;
-        width: 60%;
+        width: 50%;
 
         p {
             border-top: solid thick black;
             padding-top: 20px;
 
         }
-        p, h1 {
-            margin: 0 15%;
-            @media only screen and (max-width: 800px) {
-                width: 80%;
-                margin: 0 auto;
-            }    
+
+        &__button {
+            background: rgb(0, 0, 0);
+            color: white;
+            border: none;
+            padding: 10px 40px;
+            border-radius: 2px;
         }
-        @media only screen and (max-width: 800px) {
+
+        @media only screen and (max-width: 1024px) {
+            margin: 0 auto;
+            padding: 0 20px;
             width: 100%;
             
-            
         }
+
     }
     
 }

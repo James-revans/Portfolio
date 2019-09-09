@@ -18,7 +18,8 @@
         <div class="cloud cloud-two"></div>
         <div class="banner__container text-center" :class="{ stay: isActive }" id="banner">
         <Mountains/>
-        <Landscape/>
+        <Landscape
+        :stopScroll ="isActive"/>
         <div class="banner__container__caption">
             <h1 class="anton">James Evans</h1>
             <h2 class="roboto">Front End Web Developer</h2>
@@ -47,10 +48,9 @@ export default {
     },
     methods: {
         handleScroll () {
+            this.bannerHeight = 2*window.innerHeight;
             this.scrolled = window.scrollY > 0;
-            var a = window.scrollY;
-            var viewPortWidth = window.innerWidth;
-             
+            var a = window.scrollY;             
             
             if(a < this.bannerHeight) {
                 this.isActive = false;
@@ -61,9 +61,7 @@ export default {
         }
     },
     created () {
-        window.addEventListener('scroll', this.handleScroll);
-        this.bannerHeight = 2*window.innerHeight;
-       
+        window.addEventListener('scroll', this.handleScroll);  
     },
     destroyed () {
         window.removeEventListener('scroll', this.handleScroll);

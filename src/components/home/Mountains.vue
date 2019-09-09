@@ -52,15 +52,15 @@ export default {
 .mountains {
     position: absolute;
     right: 700px;
-    bottom: -10px;
+    bottom: 40px;
     z-index: 0;
 
-    @media only screen and (max-width: 800px) {
-        right: 280px;
-        transform: scale(0.5);
+    @media only screen and (max-width: 480px) {
+        right: 340px;
+        transform: scale(0.6);
         bottom: -110px;
 
-    }
+    }    
 
     .mountain-one, .mountain-two, .mountain-three {
         position: absolute;
