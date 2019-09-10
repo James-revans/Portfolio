@@ -1,5 +1,5 @@
 <template>
-    <div class="about d-flex align-items-center">
+    <div class="about d-md-flex align-items-center">
 
         <div class="about__text">
             <h1>ABOUT ME</h1>
@@ -25,7 +25,7 @@ export default {
 .about {
     background: #ffffff;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     padding-top: 80px;
     padding-bottom: 50px;
     
@@ -36,7 +36,7 @@ export default {
 
     &__photo {
         position: relative;
-        width: 65%;
+        width: 100%;
         text-align: center;
         margin: 0 auto; 
         z-index: 0;
@@ -46,7 +46,6 @@ export default {
             width: 100%;
         }
         @media only screen and (max-width: 1024px) {
-            width: 100%;
             padding-top: 60px;
 
         }   
@@ -55,7 +54,7 @@ export default {
     &__text {
         margin: 0 10%;
         font-size: 20px;
-        width: 50%;
+        width: 100%;
 
         p {
             border-top: solid thick black;
@@ -74,7 +73,6 @@ export default {
         @media only screen and (max-width: 1024px) {
             margin: 0 auto;
             padding: 0 20px;
-            width: 100%;
             
         }
 
