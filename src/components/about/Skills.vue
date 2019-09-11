@@ -1,6 +1,6 @@
 <template>
     <b-row class='skills mx-0'>
-        <b-col cols="12 text-center pt-5">
+        <b-col cols="12 text-center pt-3">
             <h3>EXPERIENCE</h3>
         </b-col>
         <b-col class="py-5">
@@ -26,7 +26,7 @@ export default {
 
 <style lang="scss">
 .skills {
-    background: rgb(0, 0, 0);
+    background-color: rgb(49, 129, 175);
     width: 100%;
     h3 {
         color: #ffffff;

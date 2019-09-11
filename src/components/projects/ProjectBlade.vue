@@ -69,7 +69,7 @@ export default {
             right: 1%;
             text-align: right;
             h6 {
-                background: rgb(56, 151, 96);
+                background: rgb(96, 146, 255);
                 color: white;
                 display: inline-block;
                 margin-right: 10px;
@@ -112,7 +112,7 @@ export default {
                 transform: translate(-50%, -50%);
                 color: white;
                 background: transparent;
-                border: solid thin white;
+                border: solid 2px white;
                 padding: 10px 25px;
                 transition: 0.5s;
 

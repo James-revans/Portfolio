@@ -10,7 +10,7 @@
             <button class="about__text__button">CONTACT</button>
         </div>
         <div class="about__photo">
-            <img src='../../assets/images/james-cutout-BW.png'>
+            <img src='../../assets/images/james-cutout.png'>
         </div>
     </div>
 </template>

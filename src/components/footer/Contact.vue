@@ -61,14 +61,14 @@ export default {
             &__button {
                 background: rgba(50, 153, 50, 0);
                 color: rgb(255, 255, 255);
-                border: solid thin white;
+                border: solid 2px white;
                 padding: 10px 40px;
                 border-radius: 2px;
                 transition: 0.2s;
                 &:hover {
                     transition: 0.1s;
-                    background: rgb(4, 63, 20);
-                    border-color:rgb(4, 63, 20);
+                    background: #000E30;
+                    border-color:#000E30;
                     color: white;
                 }
 

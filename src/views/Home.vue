@@ -1,6 +1,7 @@
 <template>
   <div>
     <Banner/>
+    <Waves/>
     <Skills/>
     <Projects/>
     <About/>
@@ -9,7 +10,7 @@
 </template>
 
 <script>
-
+import Waves from "@/components/Waves";
 import Banner from '@/components/home/Banner';
 import Skills from "@/components/about/Skills";
 import Projects from '@/components/projects/Projects';
@@ -19,6 +20,7 @@ import Contact from "@/components/footer/Contact";
 
 export default {
   components: {
+    Waves,
     Banner,
     Skills,
     About,

@@ -31,7 +31,7 @@ export default {
 
 <style lang="scss">
 .projects {
-    background: rgb(247, 247, 247);
+    background: rgb(229, 245, 255);
     h2 {
         color: #003249;
         font-size: 45px;
