@@ -4,7 +4,9 @@
         <div class="about__text">
             <h1>ABOUT ME</h1>
             
-            <p>Hi! I'm James Evans, a front-end web developer from Seattle, Washington. I'm currently a developer at Qudo Creative where I have contributed to the design and development of projects.</p>
+            <p>Hi! I'm James Evans, a front-end web developer from Seattle, Washington. I'm currently a developer at Qudo Creative where I have contributed to the design and development of projects.
+                I am an experienced developer in the field and have a strong drive for learning new technologies.
+            </p>
             <button class="about__text__button">CONTACT</button>
         </div>
         <div class="about__photo">
@@ -68,6 +70,7 @@ export default {
             border: none;
             padding: 10px 40px;
             border-radius: 2px;
+            box-shadow: 0px 2px 6px 2px rgb(175, 175, 175);
         }
 
         @media only screen and (max-width: 1024px) {

@@ -2,13 +2,21 @@
     <div class="landscape" id="parallax-container-landscape">
         
         <div class="hill-four p-landscape">
+            <div class="tree-seven"><Tree/></div>
             <div class="tree-six"><Tree/></div>
             <div class="tree-five"><Tree/></div>
             <div class="tree-four"><Tree/></div>
-            </div>
-        <div class="hill-three p-landscape"><div class="tree-three"><Tree/></div></div>
+            <House class="house-one"/>
+        </div>
+        <div class="hill-three p-landscape">
+            <div class="tree-three"><Tree/></div>
+            
+        </div>
         <div class="hill-two p-landscape"><div class="tree-two"><Tree/></div></div>
-        <div class="hill-one p-landscape"><div class="tree-one"><Tree/></div></div>
+        <div class="hill-one p-landscape">
+            <div class="tree-one"><Tree/></div>
+            
+        </div>
 
     </div>
 </template>
@@ -16,6 +24,7 @@
 <script>
 import Mountains from "@/components/home/Mountains";
 import Tree from "@/components/home/Tree";
+import House from "@/components/home/House";
 
 // window.addEventListener('scroll', () => {
 //   let parent = document.getElementById('parallax-container-landscape');
@@ -34,7 +43,8 @@ export default {
     props: ["stopScroll"],
     components: {
         Mountains,
-        Tree
+        Tree,
+        House
     },
 
     methods: {
@@ -86,9 +96,11 @@ export default {
         }
         .tree-one {
             position: relative;
-            bottom: -40%;
-            left: 15%;
+            bottom: -38%;
+            left: 38%;
+            transform: scale(1.5);
         }
+
     }
 
     .hill-two {
@@ -130,6 +142,7 @@ export default {
             left: 5%;
             transform: scale(0.6);
         }
+
     }
     .hill-four {
         width: 150%;
@@ -152,15 +165,26 @@ export default {
         }
         .tree-five {
             position: relative;
-            bottom: -10%;
-            left: 47%;
-            transform: scale(0.55);
+            bottom: -15%;   
+            left: 46%;
+            transform: scale(0.65);
         }
         .tree-six {
             position: relative;
             bottom: -5%;
-            left: 62%;
+            left: 65%;
             transform: scale(0.5);
+        }
+        .tree-seven {
+            position: relative;
+            bottom: -20%;
+            left: 75%;
+            transform: scale(0.8);
+        }
+        .house-one {
+            position: relative;
+            bottom: 17%;
+            left: 16%;
         }
     }
     // .trees {
