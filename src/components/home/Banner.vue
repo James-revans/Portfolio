@@ -14,7 +14,7 @@
                 data-sal-delay="500"
                 data-sal-duration="4000"
                 data-sal-easing="ease-out-bounce"></div>
-        <div class="cloud"></div>
+        <div class="cloud cloud-one"></div>
         <div class="cloud cloud-two"></div>
         <div class="banner__container text-center" :class="{ stay: isActive }" id="banner">
         <Mountains/>
@@ -145,18 +145,22 @@ export default {
         border-radius: 50%;
         overflow: hidden;
         @media only screen and (max-width: 800px) {
-                transform: scale(0.5);
-
-            }
+            transform: scale(0.5);
+        }
+    }
+    .cloud-one {
+        @media only screen and (max-width: 800px) {
+            display: none;
+    }
     }
     @-webkit-keyframes cloud {
         0%   { left: -100px; }
-        100% { left: 88vw; } 
+        100% { left: 100vw; } 
     }
     @keyframes cloud {
     
         0%   { left: -100px; }
-        100% { left: 78vw; } 
+        100% { left: 100vw; } 
     }
 
     .cloud-two {

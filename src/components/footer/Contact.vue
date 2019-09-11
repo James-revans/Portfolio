@@ -1,7 +1,7 @@
 <template>
     <div class="contact">
         <div class="contact__content">
-            <h1 data-sal="slide-right" data-sal-delay="200" data-sal-duration= "900" data-sal-easing="ease-out-bounce">CONTACT</h1>
+            <h1 data-sal="slide-up" data-sal-delay="200" data-sal-duration= "900" data-sal-easing="ease-out-bounce">CONTACT</h1>
             <form data-sal="zoom-in" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-bounce" class="contact__content__form">
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email">

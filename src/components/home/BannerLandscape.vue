@@ -6,7 +6,7 @@
             <div class="tree-six"><Tree/></div>
             <div class="tree-five"><Tree/></div>
             <div class="tree-four"><Tree/></div>
-            <House class="house-one"/>
+            <!-- <House class="house-one"/> -->
         </div>
         <div class="hill-three p-landscape">
             <div class="tree-three"><Tree/></div>

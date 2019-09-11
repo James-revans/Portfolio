@@ -1,5 +1,5 @@
 <template>
-    <div class="about d-md-flex align-items-center">
+    <div data-sal="slide-left" data-sal-delay="200" data-sal-duration= "900" data-sal-easing="ease-out-bounce" class="about d-md-flex align-items-center">
 
         <div class="about__text">
             <h1>ABOUT ME</h1>
@@ -16,10 +16,12 @@
 </template>
 <script>
 
+import sal from "sal.js";
 export default {
-    components: {
-
+    mounted() {
+        sal();
     }
+    
 }
 </script>
 
