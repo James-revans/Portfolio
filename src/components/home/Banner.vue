@@ -23,8 +23,9 @@
             <div class="banner__container__caption">
                 <h1 class="anton">James Evans</h1>
                 <h2 class="roboto">Front End Web Developer</h2>
+                <Nav/>
             </div>
-            <div class="banner__container__arrow p-3"><i class="fas fa-arrow-down"></i></div>
+            <div class="banner__container__arrow p-3"><a href="#skills"><i class="fas fa-arrow-down"></i></a></div>
         </div>
     </div>
 </template>
@@ -33,10 +34,12 @@
 import sal from "sal.js";
 import Landscape from "@/components/home/BannerLandscape";
 import Mountains from "@/components/home/Mountains";
+import Nav from "@/components/nav/Nav";
 export default {
     components: {
         Landscape,
-        Mountains
+        Mountains,
+        Nav
     },
     data() {
         return { 
@@ -199,8 +202,16 @@ export default {
             transform: translate(-50%, -50%);
             padding: 15px;
             z-index: 2;
-            text-shadow: 1px 1px #181818;
-            
+            text-shadow: 1px 0px #181818;
+            @media only screen and (max-width: 480px) {
+                width: 80%;
+                h1 {
+                    font-size: 35px;
+                }
+                h2{
+                    font-size: 25px;
+                }
+            }
         }
         &__arrow {
             color: rgb(255, 255, 255); 
@@ -211,6 +222,12 @@ export default {
             transform: translateX(-50%);
             transition: 0.4s;
             z-index: 5;
+            a {
+                color: white;
+                &:hover {
+                    color: white;
+                }
+            }
             &:hover {
                 cursor: pointer;
                 transform: translateX(-50%)scale(1.5);

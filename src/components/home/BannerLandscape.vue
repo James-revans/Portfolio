@@ -26,18 +26,6 @@ import Mountains from "@/components/home/Mountains";
 import Tree from "@/components/home/Tree";
 import House from "@/components/home/House";
 
-// window.addEventListener('scroll', () => {
-//   let parent = document.getElementById('parallax-container-landscape');
-//   let children = parent.getElementsByClassName('p-landscape');
-//   for(let i = 0; i < children.length; i++) {
-//     // children[i].style.transform = 'translateY(' + (window.pageYOffset * (1 * i) / children.length) + 'px)';
-//     children[i].style.transform = 'translateY(' + (window.pageYOffset / (1 * (i+1)) / children.length) + 'px)';
-//     children[0].style.transform = 'translateY(' + (window.pageYOffset / (2) / children.length) + 'px)';
-//     children[1].style.transform = 'translateY(' + (window.pageYOffset / (1.8) / children.length) + 'px)';
-
-//   }
-// }, false)
-
 
 export default {
     props: ["stopScroll"],
@@ -54,9 +42,9 @@ export default {
                 let children = parent.getElementsByClassName('p-landscape');
                 for(let i = 0; i < children.length; i++) {
                     // children[i].style.transform = 'translateY(' + (window.pageYOffset * (1 * i) / children.length) + 'px)';
-                    children[i].style.transform = 'translateY(' + (window.pageYOffset / (1 * (i+1)) / children.length) + 'px)';
-                    children[0].style.transform = 'translateY(' + (window.pageYOffset / (2) / children.length) + 'px)';
-                    children[1].style.transform = 'translateY(' + (window.pageYOffset / (1.8) / children.length) + 'px)';
+                    children[i].style.transform = 'translateY(' + (window.pageYOffset / (0.75 * (i+1)) / children.length) + 'px)';
+                    children[0].style.transform = 'translateY(' + (window.pageYOffset / (1.5) / children.length) + 'px)';
+                    children[1].style.transform = 'translateY(' + (window.pageYOffset / (1.35) / children.length) + 'px)';
                 }
             }
         }
@@ -72,7 +60,7 @@ export default {
 <style lang="scss">
 .landscape {
     width: 100%;
-    height: 60%;
+    height: 70%;
     background: rgb(0, 94, 0)45;
     position: absolute;
     bottom: 0;
@@ -138,11 +126,10 @@ export default {
         }
         .tree-three {
             position: relative;
-            bottom: -20%;
+            bottom: -18%;
             left: 5%;
             transform: scale(0.6);
         }
-
     }
     .hill-four {
         width: 150%;

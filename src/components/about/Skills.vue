@@ -1,5 +1,5 @@
 <template>
-    <b-row class='skills mx-0'>
+    <b-row class='skills mx-0' id="skills">
         <b-col cols="12 text-center pt-3">
             <h3>EXPERIENCE</h3>
         </b-col>

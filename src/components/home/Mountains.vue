@@ -55,7 +55,7 @@ export default {
     bottom: 40px;
     z-index: 0;
 
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 800px) {
         right: 340px;
         transform: scale(0.6);
         bottom: -110px;
