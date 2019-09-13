@@ -1,5 +1,6 @@
 <template>
     <div class="project-modal">
+        <div @click="$emit('closeModal', false)" class="project-modal__wrapper"></div>
         <div class="project-modal__content">
             <div @click="$emit('closeModal', false)" class="project-modal__content__close"><i class="fas fa-times"></i></div>
             <img class="" :src="getImgUrl()">
@@ -25,6 +26,9 @@ export default {
         getImgUrl() {
             return require('../../assets/images/' + this.img)
         },
+    },
+    created() {
+        document.body.style.overflowY = 'hidden';
     }
 }
 </script>
@@ -36,11 +40,20 @@ export default {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.603);
     bottom: 0;
     left: 0;
     z-index: 2;
-    overflow: hidden;
+
+    &__wrapper {
+        background: rgba(0, 0, 0, 0.603);
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        overflow: hidden;
+        bottom: 0;
+        left: 0;
+
+    }
 
     &__content {
         max-width: 500px;

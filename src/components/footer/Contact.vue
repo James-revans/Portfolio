@@ -27,7 +27,7 @@ export default {
 
 .contact {
     position: relative;
-    background: rgb(12, 12, 12);
+    background: rgb(19, 19, 19);
     width: 100%;
     padding: 50px 0;
     z-index: 1;
@@ -59,19 +59,18 @@ export default {
             }
 
             &__button {
-                background: rgba(50, 153, 50, 0);
+                background: rgba(255, 255, 255, 0);
                 color: rgb(255, 255, 255);
                 border: solid 2px white;
                 padding: 10px 40px;
-                border-radius: 2px;
+                border-radius: 1px;
                 transition: 0.2s;
                 &:hover {
-                    transition: 0.1s;
-                    background: #000E30;
-                    border-color:#000E30;
-                    color: white;
-                }
+                    transition: 0.3s;
+                    background: rgba(255, 255, 255, 0.925);
+                    color: black;
 
+                }
             }
             
 

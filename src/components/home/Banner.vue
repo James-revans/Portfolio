@@ -17,14 +17,14 @@
         <div class="cloud cloud-one"></div>
         <div class="cloud cloud-two"></div>
         <div class="banner__container text-center" :class="{ stay: isActive }" id="banner">
-        <Mountains/>
-        <Landscape
-        :stopScroll ="isActive"/>
-        <div class="banner__container__caption">
-            <h1 class="anton">James Evans</h1>
-            <h2 class="roboto">Front End Web Developer</h2>
-        </div>
-        <div class="banner__container__arrow p-3"><i class="fas fa-arrow-down"></i></div>
+            <Mountains/>
+            <Landscape
+            :stopScroll ="isActive"/>
+            <div class="banner__container__caption">
+                <h1 class="anton">James Evans</h1>
+                <h2 class="roboto">Front End Web Developer</h2>
+            </div>
+            <div class="banner__container__arrow p-3"><i class="fas fa-arrow-down"></i></div>
         </div>
     </div>
 </template>
@@ -76,6 +76,7 @@ export default {
     height: 300vh;
     width: 100%;
     overflow: hidden;
+    
     .sun {
         position: absolute;
         top: 80px;
@@ -181,11 +182,9 @@ export default {
     }
     &__container {
         position: fixed;
-        height: 100vh;  
+        height: 100%;  
         width: 100%;
         overflow: hidden;
-
-        
 
         h1 {
             font-size: 60px;
@@ -200,6 +199,7 @@ export default {
             transform: translate(-50%, -50%);
             padding: 15px;
             z-index: 2;
+            text-shadow: 1px 1px #181818;
             
         }
         &__arrow {

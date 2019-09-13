@@ -8,7 +8,7 @@
             <img class="" :src="getImgUrl()">
             <div class="blade__img__tools"><h6 v-for="(item, index) in tools" :key="index" class="p-2">{{ item }}</h6></div>
         </div>
-        <ProjectModal v-show="viewMore" v-on:closeModal="viewMore = false"
+        <ProjectModal v-if="viewMore" v-on:closeModal="closeModal"
         :project="project"
         :description="description"
         :tools="tools"  
@@ -38,6 +38,10 @@ export default {
         getImgUrl() {
             return require('../../assets/images/' + this.img)
         },
+        closeModal() {
+            this.viewMore = false;
+            document.body.style.overflowY = 'scroll';
+        }
 
     },
     mounted() {
@@ -60,9 +64,9 @@ export default {
             width: 100%;
             border-radius: 2px;
             border: solid 1px rgb(199, 199, 199);
-            box-shadow: 0px 2px 12px 2px rgb(196, 196, 196);
-            
+            box-shadow: 0px 2px 12px 2px rgb(196, 196, 196); 
         }
+
         &__tools {
             position: absolute;
             bottom: 1%;
@@ -79,11 +83,6 @@ export default {
                     font-size: 12px;
                 }
             }
-        }
-
-
-        @media only screen and (max-width: 800px) {
-            width: 100%;
         }
 
         &__link {
@@ -104,10 +103,14 @@ export default {
                 color: white;
                 font-size: 23px;
                 font-weight: 100;
+                @media only screen and (max-width: 800px) {
+                    font-size: 20px;
+
+                }
             }
             button {
                 position: absolute;
-                bottom: 20%;
+                bottom: 15%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 color: white;
@@ -115,21 +118,27 @@ export default {
                 border: solid 2px white;
                 padding: 10px 25px;
                 transition: 0.5s;
-
                 &:hover {
                     transition: 0.3s;
                     background: white;
-                    color: #000E30;
-                    
+                    color: #000E30; 
                 }
-
+                @media only screen and (max-width: 800px) {
+                    font-size: 12px;
+                    bottom: 5%;
+                    padding: 8px 15px;
+                }
             }
+
             &:hover {
                 opacity: 0.9;
                 transition: 0.5s;
                 cursor: pointer;
             }
 
+        }
+        @media only screen and (max-width: 800px) {
+            width: 100%;
         }
     }
 }

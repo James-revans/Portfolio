@@ -1,5 +1,5 @@
 <template>
-    <div data-sal="slide-left" data-sal-delay="200" data-sal-duration= "900" data-sal-easing="ease-out-bounce" class="about d-md-flex align-items-center">
+    <div data-sal="slide-left" data-sal-delay="200" data-sal-duration="900" data-sal-easing="ease-out-bounce" class="about d-md-flex align-items-center">
 
         <div class="about__text">
             <h1>ABOUT ME</h1>
@@ -19,9 +19,10 @@
 import sal from "sal.js";
 export default {
     mounted() {
-        sal();
+        sal({
+            threshold: 0.25
+        });
     }
-    
 }
 </script>
 
@@ -32,6 +33,7 @@ export default {
     width: 100%;
     padding-top: 80px;
     padding-bottom: 50px;
+    
     
 
     @media only screen and (max-width: 480px) {
@@ -67,7 +69,7 @@ export default {
         }
 
         &__button {
-            background: rgb(0, 0, 0);
+            background: rgb(19, 19, 19);
             color: white;
             border: none;
             padding: 10px 40px;
