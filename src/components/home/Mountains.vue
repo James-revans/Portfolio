@@ -1,15 +1,20 @@
 <template>
     <div class="mountains" id="parallax-container-m">  
         <div class="mountain-one p-mountain">
-            <div class="snow-one"></div>
+            <div class="snow-one">
+                <div class="snow-one2"></div>
+            </div>
             <div class="mountain-shadow-one">
                 <div class="snow-shadow-one"></div>
             </div>
+            <div class="mountain-shadow-one2"></div>
         </div>
 
 
         <div class="mountain-two p-mountain">
-            <div class="snow-two"></div>
+            <div class="snow-two">
+                <div class="snow-two2"></div>
+            </div>
             <div class="mountain-shadow-two">
                 <div class="snow-shadow-two"></div>
             </div>
@@ -17,10 +22,13 @@
 
 
         <div class="mountain-three p-mountain">
-            <div class="snow-three"></div>
+            <div class="snow-three">
+                <div class="snow-three2"></div>
+            </div>
             <div class="mountain-shadow-three">
                 <div class="snow-shadow-three"></div>
             </div>
+            <div class="mountain-shadow-three2"></div>
         </div>
 
     </div>
@@ -52,15 +60,15 @@ export default {
 .mountains {
     position: absolute;
     right: 700px;
-    bottom: -10px;
+    bottom: 40px;
     z-index: 0;
 
     @media only screen and (max-width: 800px) {
-        right: 280px;
-        transform: scale(0.5);
+        right: 340px;
+        transform: scale(0.6);
         bottom: -110px;
 
-    }
+    }    
 
     .mountain-one, .mountain-two, .mountain-three {
         position: absolute;
@@ -81,6 +89,28 @@ export default {
             z-index: 1;
             transform-origin: top right;
             transform: skew(25deg);
+        }
+        .mountain-shadow-one2 {
+            position: absolute;
+            top: 160px;
+            left: -22px;
+            border-right: 80px solid transparent;
+            border-bottom: 50px solid #00695c;
+            border-left: 90px solid transparent;
+            border-top: 0;
+            z-index: 1;
+            transform: rotate(-115deg);
+        }
+        .mountain-shadow-three2 {
+            position: absolute;
+            top: 160px;
+            left: -5px;
+            border-right: 115px solid transparent;
+            border-bottom: 50px solid #00897b;
+            border-left: 75px solid transparent;
+            border-top: 0;
+            z-index: 1;
+            transform: rotate(65deg);
         }
     }
     .mountain-two {
@@ -122,6 +152,17 @@ export default {
         border-bottom: 100px solid #dddddd;
         border-left: 75px solid transparent;
         z-index: 2;
+        .snow-one2 {
+            position: absolute;
+            bottom: -110px;
+            left: -75px;
+            width: 125px;
+            height: 18px;
+            border-radius: 50%;
+            z-index: 2;
+            transform: rotate(180deg);
+            background: #dddddd;
+        }
     }
     .snow-shadow-one {
         position: absolute;
@@ -138,10 +179,21 @@ export default {
         position: absolute;
         bottom: -100px;
         left: -50px;
-        border-right: 50px solid transparent;
+        border-right: 47px solid transparent;
         border-bottom: 100px solid #dddddd;
         border-left: 50px solid transparent;
         z-index: 2;
+        .snow-two2 {
+            position: absolute;
+            bottom: -110px;
+            left: -50px;
+            width: 97px;
+            height: 18px;
+            border-radius: 50%;
+            z-index: 2;
+            transform: rotate(180deg);
+            background: #dddddd;
+        }
     }
     .snow-shadow-two {
         position: absolute;
@@ -158,10 +210,22 @@ export default {
         position: absolute;
         bottom: -100px;
         left: -75px;
-        border-right: 50px solid transparent;
+        border-right: 47px solid transparent;
         border-bottom: 102px solid #dddddd;
         border-left: 75px solid transparent;
         z-index: 2;
+        .snow-three2 {
+            position: absolute;
+            bottom: -110px;
+            top: 84px;
+            left: -70px;
+            width: 117px;
+            height: 40px;
+            border-radius: 50%;
+            z-index: 2;
+            transform: rotate(180deg);
+            background: #dddddd;
+        }
     }
     .snow-shadow-three {
         position: absolute;

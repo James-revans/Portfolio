@@ -14,6 +14,7 @@ export default {
 <style lang="scss">
 #app {
   background: white;
+  overflow-x: hidden;
 }
 
 </style>
