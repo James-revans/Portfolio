@@ -14,16 +14,18 @@
                 data-sal-delay="500"
                 data-sal-duration="4000"
                 data-sal-easing="ease-out-bounce"></div>
-        <div class="cloud"></div>
+        <div class="cloud cloud-one"></div>
         <div class="cloud cloud-two"></div>
         <div class="banner__container text-center" :class="{ stay: isActive }" id="banner">
-        <Mountains/>
-        <Landscape/>
-        <div class="banner__container__caption">
-            <h1 class="anton">James Evans</h1>
-            <h2 class="roboto">Front End Web Developer</h2>
-        </div>
-        <div class="banner__container__arrow p-3"><i class="fas fa-arrow-down"></i></div>
+            <Mountains/>
+            <Landscape
+            :stopScroll ="isActive"/>
+            <div class="banner__container__caption">
+                <h1 class="anton">James Evans</h1>
+                <h2 class="roboto">Front End Web Developer</h2>
+                <Nav/>
+            </div>
+            <div class="banner__container__arrow p-3"><a href="#projects"><i class="fas fa-arrow-down"></i></a></div>
         </div>
     </div>
 </template>
@@ -32,10 +34,12 @@
 import sal from "sal.js";
 import Landscape from "@/components/home/BannerLandscape";
 import Mountains from "@/components/home/Mountains";
+import Nav from "@/components/nav/Nav";
 export default {
     components: {
         Landscape,
-        Mountains
+        Mountains,
+        Nav
     },
     data() {
         return { 
@@ -47,10 +51,9 @@ export default {
     },
     methods: {
         handleScroll () {
+            this.bannerHeight = 2*window.innerHeight;
             this.scrolled = window.scrollY > 0;
-            var a = window.scrollY;
-            var viewPortWidth = window.innerWidth;
-             
+            var a = window.scrollY;             
             
             if(a < this.bannerHeight) {
                 this.isActive = false;
@@ -61,9 +64,7 @@ export default {
         }
     },
     created () {
-        window.addEventListener('scroll', this.handleScroll);
-        this.bannerHeight = 2*window.innerHeight;
-       
+        window.addEventListener('scroll', this.handleScroll);  
     },
     destroyed () {
         window.removeEventListener('scroll', this.handleScroll);
@@ -78,6 +79,7 @@ export default {
     height: 300vh;
     width: 100%;
     overflow: hidden;
+    
     .sun {
         position: absolute;
         top: 80px;
@@ -147,18 +149,22 @@ export default {
         border-radius: 50%;
         overflow: hidden;
         @media only screen and (max-width: 800px) {
-                transform: scale(0.5);
-
-            }
+            transform: scale(0.5);
+        }
+    }
+    .cloud-one {
+        @media only screen and (max-width: 800px) {
+            display: none;
+    }
     }
     @-webkit-keyframes cloud {
         0%   { left: -100px; }
-        100% { left: 88vw; } 
+        100% { left: 100vw; } 
     }
     @keyframes cloud {
     
         0%   { left: -100px; }
-        100% { left: 78vw; } 
+        100% { left: 100vw; } 
     }
 
     .cloud-two {
@@ -179,11 +185,9 @@ export default {
     }
     &__container {
         position: fixed;
-        height: 100vh;  
+        height: 100%;  
         width: 100%;
         overflow: hidden;
-
-        
 
         h1 {
             font-size: 60px;
@@ -198,7 +202,16 @@ export default {
             transform: translate(-50%, -50%);
             padding: 15px;
             z-index: 2;
-            
+            text-shadow: 1px 0px #181818;
+            @media only screen and (max-width: 480px) {
+                width: 80%;
+                h1 {
+                    font-size: 35px;
+                }
+                h2{
+                    font-size: 25px;
+                }
+            }
         }
         &__arrow {
             color: rgb(255, 255, 255); 
@@ -209,6 +222,12 @@ export default {
             transform: translateX(-50%);
             transition: 0.4s;
             z-index: 5;
+            a {
+                color: white;
+                &:hover {
+                    color: white;
+                }
+            }
             &:hover {
                 cursor: pointer;
                 transform: translateX(-50%)scale(1.5);
