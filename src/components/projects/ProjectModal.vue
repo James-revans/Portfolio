@@ -9,6 +9,7 @@
                 <h6 v-for="(item, index) in tools" :key="index" class="p-2">{{ item }}</h6>
                 <p>{{ description }}</p>
                 <a target="_blank" v-bind:href="url">VISIT PROJECT</a>
+                <a v-if="code !== ''" target="_blank" v-bind:href="code">GITHUB</a>
             </div>
         </div>
     </div>
@@ -16,7 +17,7 @@
 
 <script>
 export default {
-    props: ['project', 'description', 'tools', 'img', 'url'],
+    props: ['project', 'description', 'tools', 'img', 'url', 'code'],
     data() {
         return {
 
@@ -115,6 +116,7 @@ export default {
             }
             a {
                 padding: 10px 25px;
+                margin-right: 10px;
                 background: black;
                 color: white;
                 box-shadow: 0px 2px 6px 2px rgb(175, 175, 175);

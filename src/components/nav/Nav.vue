@@ -1,14 +1,14 @@
 <template>
     <div class="nav d-flex flex-wrap">
-        <a href="#skills">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a data-scroll href="#projects">Portfolio</a>
+        <a data-scroll href="#about">About</a>
+        <a data-scroll href="#contact">Contact</a>
     </div>
 </template>
 
 <script>
 export default {
-    
+
 }
 </script>
 

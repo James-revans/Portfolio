@@ -13,7 +13,8 @@
         :description="description"
         :tools="tools"  
         :img="img"
-        :url="url"/>
+        :url="url"
+        :code="code"/>
     </div>
 </template>
 
@@ -23,7 +24,7 @@ import ProjectModal from "@/components/projects/ProjectModal";
 import sal from "sal.js";
 
 export default {    
-    props: ['project', 'description', 'tools', 'img', 'url'],
+    props: ['project', 'description', 'tools', 'img', 'url', 'code'],
     components: {
         ProjectModal
 

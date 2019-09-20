@@ -1,5 +1,5 @@
 <template>
-    <b-row class='skills mx-0' id="skills">
+    <b-row class='skills mx-0' id="projects">
         <b-col cols="12 text-center pt-3">
             <h3>EXPERIENCE</h3>
         </b-col>
@@ -11,6 +11,8 @@
 
 <script>
 import SkillsLogo from "@/components/about/SkillsLogo";
+import SmoothScroll from 'smooth-scroll';
+
 export default {
     components: {
         SkillsLogo
@@ -19,7 +21,12 @@ export default {
         return {
             
         }
-    }
+    },
+    mounted() {
+    var scroll = new SmoothScroll('a[href*="#projects"]', {
+        speed: 1400,
+    });
+}
     
 }
 </script>

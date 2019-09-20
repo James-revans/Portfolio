@@ -9,7 +9,8 @@
             :description="item.description"
             :tools="item.tools"
             :img="item.img"
-            :url="item.url"/>
+            :url="item.url"
+            :code="item.code"/>
         </div>
     </div>
 </template>

@@ -84,7 +84,8 @@ export default {
         }
         .tree-one {
             position: relative;
-            bottom: -38%;
+            z-index: 5;
+            bottom: -33%;
             left: 38%;
             transform: scale(1.5);
         }
@@ -120,16 +121,22 @@ export default {
         left: 0;
         border-top-right-radius: 100%;
         z-index: 0;
+
+        .tree-three {
+            display: none;
+        }
         @media only screen and (min-width: 1024px) {
             height: 98%;
             width: 100%;
+            .tree-three {
+                display: block;
+                bottom: -15%;
+                position: relative;
+                left: 5%;
+                transform: scale(0.6);
+            }
         }
-        .tree-three {
-            position: relative;
-            bottom: -18%;
-            left: 5%;
-            transform: scale(0.6);
-        }
+
     }
     .hill-four {
         width: 150%;
@@ -140,10 +147,7 @@ export default {
         right: 0;
         border-top-left-radius: 100%;
         z-index: 0;
-        @media only screen and (min-width: 1024px) {
-            height: 100%;
-            width: 100%;
-        }
+
         .tree-four {
             position: relative;
             bottom: -5%;
@@ -151,10 +155,7 @@ export default {
             transform: scale(0.4);
         }
         .tree-five {
-            position: relative;
-            bottom: -15%;   
-            left: 46%;
-            transform: scale(0.65);
+            display: none;
         }
         .tree-six {
             position: relative;
@@ -165,13 +166,27 @@ export default {
         .tree-seven {
             position: relative;
             bottom: -20%;
-            left: 75%;
-            transform: scale(0.8);
+            left: 70%;
+            transform: scale(0.7);
         }
         .house-one {
             position: relative;
             bottom: 17%;
             left: 16%;
+        }
+        @media only screen and (min-width: 1024px) {
+            height: 100%;
+            width: 100%;
+            .tree-five {
+                display: inline-block;
+                position: relative;
+                bottom: -15%;   
+                left: 46%;
+                transform: scale(0.65);
+            }
+            .tree-seven {
+                bottom: -24%;
+            }
         }
     }
     // .trees {

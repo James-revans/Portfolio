@@ -25,7 +25,7 @@
                 <h2 class="roboto">Front End Web Developer</h2>
                 <Nav/>
             </div>
-            <div class="banner__container__arrow p-3"><a href="#skills"><i class="fas fa-arrow-down"></i></a></div>
+            <div class="banner__container__arrow p-3"><a href="#projects"><i class="fas fa-arrow-down"></i></a></div>
         </div>
     </div>
 </template>

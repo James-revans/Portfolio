@@ -2,14 +2,14 @@
     <div class="contact" id="contact">
         <div class="contact__content">
             <h1 data-sal="slide-up" data-sal-delay="200" data-sal-duration= "900" data-sal-easing="ease-out-bounce">CONTACT</h1>
-            <form data-sal="zoom-in" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-bounce" class="contact__content__form">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Message"></textarea>
-                <button class="contact__content__form__button">SEND MESSAGE</button>
+            <form method="POST" data-netlifly="true" action="email" data-sal="zoom-in" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-bounce" class="contact__content__form">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <textarea name="message" id="text" placeholder="Message"></textarea>
+                <button type="submit" value="submit" class="contact__content__form__button">SEND MESSAGE</button>
             </form>
         </div>
-
     </div>
 </template>
 
