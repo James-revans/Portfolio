@@ -42,9 +42,9 @@ export default {
                 let children = parent.getElementsByClassName('p-landscape');
                 for(let i = 0; i < children.length; i++) {
                     // children[i].style.transform = 'translateY(' + (window.pageYOffset * (1 * i) / children.length) + 'px)';
-                    children[i].style.transform = 'translateY(' + (window.pageYOffset / (0.75 * (i+1)) / children.length) + 'px)';
-                    children[0].style.transform = 'translateY(' + (window.pageYOffset / (1.5) / children.length) + 'px)';
-                    children[1].style.transform = 'translateY(' + (window.pageYOffset / (1.35) / children.length) + 'px)';
+                    children[i].style.transform = 'translateY(' + (window.pageYOffset / (1.35 * (i+1)) / children.length) + 'px)';
+                    children[0].style.transform = 'translateY(' + (window.pageYOffset / (2.7) / children.length) + 'px)';
+                    children[1].style.transform = 'translateY(' + (window.pageYOffset / (2.43) / children.length) + 'px)';
                 }
             }
         }
@@ -189,62 +189,6 @@ export default {
             }
         }
     }
-    // .trees {
-    //     @media only screen and (max-width: 800px) {
-    //         transform: scale(0.6);
-    //         position: relative;
-    //         left: 0;
-    //         bottom: -30px;
-    //     }
-    //     .treeBranch-one {
-    //         position: absolute;
-    //         bottom: 20px; 
-    //         left: 20%;
-    //         width: 15px;
-    //         height: 10px;
-    //         background: brown;
-    //         .treeBush-oneLeft, .treeBush-oneRight {
-    //             position: absolute;
-    //             bottom: 10px;
-    //             right: 50%;
-    //             border-left: 30px solid transparent;
-    //             border-right: 0px solid transparent;
-    //             border-bottom: 50px solid #009625;
-    //         }
-
-    //         .treeBush-oneLeft-shade, .treeBush-oneRight-shade {
-    //             position: absolute;
-    //             bottom: 10px;
-    //             left: 50%;
-    //             border-left: 0px solid transparent;
-    //             border-right: 30px solid transparent;
-    //             border-bottom: 50px solid #018623;                    
-    //         }
-    //         .treeBush-oneRight, .treeBush-oneRight-shade {
-    //             bottom: -30px;
-    //         }
-    //     }
-    //     .tree-two {
-    //         left: 40%;
-    //         transform: scale(0.7);
-    //         bottom: 30px;
-    //     }
-    //     .tree-three {
-    //         left: 60%;
-    //         transform: scale(0.4);
-    //         bottom: 60px;
-    //         @media only screen and (max-width: 800px) {
-    //             bottom: 30px;
-    //         }
-    //     }
-    //     .tree-four {
-    //         left: 85%;
-    //         transform: scale(0.8);
-    //         bottom: 30px;
-    //     }
-
-
-    // }
 }
 
 </style>

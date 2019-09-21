@@ -19,6 +19,7 @@ export default {
     height: 250px;
     overflow: hidden;
     background: #87b158;
+    border-top: solid thick #87b158;
     &__wave-1 {
         position: absolute;
         width: 800vw;
@@ -34,7 +35,7 @@ export default {
         width: 800vw;
         height: 800vw;
         left: -360%;
-        top: 60%;
+        top: 50%;
         background-color: rgba(58, 154, 209, 0.863);
         border-radius: 48%;
         animation: rotate 12s linear infinite;
@@ -44,7 +45,7 @@ export default {
         width: 800vw;
         height: 800vw;
         left: -340%;
-        top: 50%;
+        top: 60%;
         background-color: rgb(49, 129, 175);
         border-radius: 49%;
         animation: rotate 11s linear infinite;
