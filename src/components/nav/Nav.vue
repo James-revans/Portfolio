@@ -26,7 +26,6 @@ export default {
         &:hover {
             color: white;
             border-color: white;
-            
             text-decoration: none;
         }
         &:focus {

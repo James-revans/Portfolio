@@ -21,7 +21,7 @@
         "description": "A vanilla JavaScipt memory card flip game! Flip one card over to reveal a photo of a dog or cat, then flip over another card to try and find its pair. Try to match all the cards with their pair before the time runs out!",
         "tools": ["Vanilla JavaScript", "HTML5", "SCSS", "Bootstrap"],
         "img": "jsMatching.png",
-        "url": "https://reverent-booth-cf3c74.netlify.com/",
+        "url": "https://javascript-memorygame.netlify.com/",
         "code": "https://github.com/James-revans/JavaScript-Memory-Game"
     }
 ]
