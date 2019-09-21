@@ -2,7 +2,7 @@
     <div class="contact" id="contact">
         <div class="contact__content">
             <h1 data-sal="slide-up" data-sal-delay="200" data-sal-duration= "900" data-sal-easing="ease-out-bounce">CONTACT</h1>
-            <form name="contact" method="POST" data-netlifly="true" data-sal="zoom-in" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-bounce" class="contact__content__form">
+            <form name="contact" action="POST" data-netlifly="true" data-sal="zoom-in" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-bounce" class="contact__content__form">
                 <input type="text" name="name" id="name" placeholder="Name">
                 <input type="email" name="email" id="email" placeholder="Email">
                 <input type="text" name="subject" id="subject" placeholder="Subject">
