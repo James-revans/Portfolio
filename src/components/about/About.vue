@@ -1,5 +1,5 @@
 <template>
-    <div id="about" data-sal="slide-left" data-sal-delay="200" data-sal-duration="900" data-sal-easing="ease-out-bounce" class="about d-md-flex align-items-center">
+    <div id="about" data-sal="slide-up" data-sal-delay="200" data-sal-duration="900" data-sal-easing="ease-out-bounce" class="about d-md-flex align-items-center">
 
         <div class="about__text">
             <h1>ABOUT ME</h1>
@@ -7,7 +7,7 @@
             <p>Hi! I'm James Evans, a front-end web developer from Seattle, Washington. I'm currently a developer at Qudo Creative where I have contributed to the design and development of projects.
                 I am an experienced developer in the field and have a strong drive for learning new technologies.
             </p>
-            <button class="about__text__button">CONTACT</button>
+            <a data-scroll href="#contact" class="about__text__button">CONTACT</a>
         </div>
         <div class="about__photo">
             <img src='../../assets/images/james-cutout.png'>
@@ -34,9 +34,7 @@ export default {
     height: 100%;
     width: 100%;
     padding-top: 80px;
-    padding-bottom: 50px;
-    
-    
+    padding-bottom: 50px;    
 
     @media only screen and (max-width: 480px) {
         padding-top: 50px;
@@ -70,13 +68,26 @@ export default {
 
         }
 
-        &__button {
+        a {
             background: rgb(19, 19, 19);
             color: white;
             border: none;
             padding: 10px 40px;
             border-radius: 2px;
             box-shadow: 0px 2px 6px 2px rgb(175, 175, 175);
+            transition: 0.2s;
+            
+                &:hover {
+                    border-color: white;
+                    text-decoration: none;
+                    background: white;
+                    color: black;
+                    transition: 0.3s;
+                }
+                &:focus {
+                    color: white;
+                }
+            
         }
 
         @media only screen and (max-width: 1024px) {
