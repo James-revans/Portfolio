@@ -2,14 +2,15 @@
     <div class="contact" id="contact">
         <div class="contact__content">
             <h1 data-sal="slide-up" data-sal-delay="200" data-sal-duration= "900" data-sal-easing="ease-out-bounce">CONTACT</h1>
-            <form method="POST" data-netlifly="true" action="email" data-sal="zoom-in" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-bounce" class="contact__content__form">
-                <input type="hidden" name="form-james" value="form-james" />
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="text" name="subject" id="subject" placeholder="Subject">
+            <form name="contact" method="post" netlify data-netlify-honeypot="bot-field" data-sal="zoom-in" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-bounce" class="contact__content__form">
+                <input type="hidden" name="form-name" value="contact" />
+                <input type="text" name="name" id="name" placeholder="Name"/>
+                <input type="email" name="email" id="email" placeholder="Email"/>
+                <input type="text" name="subject" id="subject" placeholder="Subject"/>
                 <textarea name="message" id="text" placeholder="Message"></textarea>
                 <button type="submit" value="submit" class="contact__content__form__button">SEND MESSAGE</button>
             </form>
+            <div class="contact__content__resume"><a href="https://drive.google.com/file/d/1_2tpbP2D2drFeT6VPYNC1jAVBnIxHVwi/view?usp=sharing" target="_blank">Download Resume</a></div>
         </div>
     </div>
 </template>
@@ -34,6 +35,28 @@ export default {
     z-index: 1;
 
     &__content {
+        &__resume {
+            font-size: 20px;
+            width: 100%;
+            color: white;
+            text-align: center;
+            margin: 50px auto 0px auto;
+            
+            
+            a {
+                color: white;
+                border-bottom: solid thin transparent;
+                padding-bottom: 5px;
+                transition: 0.3s;
+                &:hover {
+                    color: white;
+                    text-decoration: none;
+                    border-color: white;
+                    transition: 0.2s
+                }
+            } 
+        }
+
         h1 {
             margin: 0 auto;
             width: 100%;

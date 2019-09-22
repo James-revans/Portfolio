@@ -6,7 +6,6 @@
             <div class="tree-six"><Tree/></div>
             <div class="tree-five"><Tree/></div>
             <div class="tree-four"><Tree/></div>
-            <!-- <House class="house-one"/> -->
         </div>
         <div class="hill-three p-landscape">
             <div class="tree-three"><Tree/></div>
@@ -22,30 +21,23 @@
 </template>
 
 <script>
-import Mountains from "@/components/home/Mountains";
 import Tree from "@/components/home/Tree";
-import House from "@/components/home/House";
 
 
 export default {
-    props: ["stopScroll"],
     components: {
-        Mountains,
         Tree,
-        House
     },
 
     methods: {
         handleScroll() {
-            if(!this.stopScroll) {
-                let parent = document.getElementById('parallax-container-landscape');
-                let children = parent.getElementsByClassName('p-landscape');
-                for(let i = 0; i < children.length; i++) {
-                    // children[i].style.transform = 'translateY(' + (window.pageYOffset * (1 * i) / children.length) + 'px)';
-                    children[i].style.transform = 'translateY(' + (window.pageYOffset / (1.35 * (i+1)) / children.length) + 'px)';
-                    children[0].style.transform = 'translateY(' + (window.pageYOffset / (2.7) / children.length) + 'px)';
-                    children[1].style.transform = 'translateY(' + (window.pageYOffset / (2.43) / children.length) + 'px)';
-                }
+            let parent = document.getElementById('parallax-container-landscape');
+            let children = parent.getElementsByClassName('p-landscape');
+            for(let i = 0; i < children.length; i++) {
+                // children[i].style.transform = 'translateY(' + (window.pageYOffset * (1 * i) / children.length) + 'px)';
+                children[i].style.transform = 'translateY(' + (window.pageYOffset / (1.35 * (i+1)) / children.length) + 'px)';
+                children[0].style.transform = 'translateY(' + (window.pageYOffset / (2.7) / children.length) + 'px)';
+                children[1].style.transform = 'translateY(' + (window.pageYOffset / (2.43) / children.length) + 'px)';
             }
         }
     },
