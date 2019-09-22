@@ -20,8 +20,7 @@
         </div>
         <div class="banner__container text-center" id="banner">
             <Mountains/>
-            <Landscape
-            :stopScroll ="isActive"/>
+            <Landscape/>
              <div class="banner__container__caption">
                 <h1 class="anton">James Evans</h1>
                 <h2 class="roboto">Front End Web Developer</h2>
@@ -45,31 +44,11 @@ export default {
     },
     data() {
         return { 
-            isActive: false,
-            scrolled: false,
-            bannerHeight: null
 
         }
     },
-    methods: {
-        // handleScroll () {
-        //     this.bannerHeight = 1.75*window.innerHeight;
-        //     this.scrolled = window.scrollY > 0;
-        //     var a = window.scrollY;             
-            
-        //     if(a < this.bannerHeight) {
-        //         this.isActive = false;
-        //     }
-        //     else {
-        //         this.isActive = true;
-        //     }
-        // }
-    },
-    created () {
-        // window.addEventListener('scroll', this.handleScroll);  
-    },
-    destroyed () {
-        // window.removeEventListener('scroll', this.handleScroll);
+    mounted() {
+        sal();
     }
 }
 
@@ -250,11 +229,6 @@ export default {
             bottom: -120px;
         }
     }
-    // .stay{
-    //     position: absolute;
-    //     top: 200vh;
-    //     transition-duration: 1s;
-    // }
     
 }
 

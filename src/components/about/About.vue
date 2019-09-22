@@ -1,5 +1,5 @@
 <template>
-    <div id="about" data-sal="slide-up" data-sal-delay="200" data-sal-duration="900" data-sal-easing="ease-out-bounce" class="about d-md-flex align-items-center">
+    <div id="about" data-sal="slide-up" data-sal-delay="500" data-sal-duration="900" data-sal-easing="ease-out-bounce" class="about d-md-flex align-items-center">
 
         <div class="about__text">
             <h1>ABOUT ME</h1>
