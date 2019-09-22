@@ -2,7 +2,7 @@
     <div class="contact" id="contact">
         <div class="contact__content">
             <h1 data-sal="slide-up" data-sal-delay="200" data-sal-duration= "900" data-sal-easing="ease-out-bounce">CONTACT</h1>
-            <form name="contact" method="post" data-netlifly="true" data-netlify-honeypot="bot-field" data-sal="zoom-in" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-bounce" class="contact__content__form">
+            <form name="contact" method="post" netlify data-netlify-honeypot="bot-field" data-sal="zoom-in" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-bounce" class="contact__content__form">
                 <input type="hidden" name="form-name" value="contact" />
                 <input type="text" name="name" id="name" placeholder="Name"/>
                 <input type="email" name="email" id="email" placeholder="Email"/>
