@@ -2,10 +2,11 @@
     <div class="contact" id="contact">
         <div class="contact__content">
             <h1 data-sal="slide-up" data-sal-delay="200" data-sal-duration= "900" data-sal-easing="ease-out-bounce">CONTACT</h1>
-            <form name="contact" action="POST" data-netlifly="true" data-sal="zoom-in" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-bounce" class="contact__content__form">
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="text" name="subject" id="subject" placeholder="Subject">
+            <form name="contact" method="post" data-netlifly="true" data-netlify-honeypot="bot-field" data-sal="zoom-in" data-sal-delay="300" data-sal-duration="700" data-sal-easing="ease-out-bounce" class="contact__content__form">
+                <input type="hidden" name="form-name" value="contact" />
+                <input type="text" name="name" id="name" placeholder="Name"/>
+                <input type="email" name="email" id="email" placeholder="Email"/>
+                <input type="text" name="subject" id="subject" placeholder="Subject"/>
                 <textarea name="message" id="text" placeholder="Message"></textarea>
                 <button type="submit" value="submit" class="contact__content__form__button">SEND MESSAGE</button>
             </form>
