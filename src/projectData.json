@@ -23,5 +23,21 @@
         "img": "jsMatching.png",
         "url": "https://javascript-memorygame.netlify.com/",
         "code": "https://github.com/James-revans/JavaScript-Memory-Game"
+    },
+    {
+        "project": "SRG Photo and Video",
+        "description": "Photography portfolio website displaying the work of Savanna Grunzke. This site is made using the new Svelte framework and uses the Photo CMS app to update photos.",
+        "tools": ["Svelte.js", "SCSS", "HTML5", "Bootstrap"],
+        "img": "srgphotosv3.png",
+        "url": "https://srgphotos.netlify.com/",
+        "code": "https://github.com/James-revans/Photography-site"
+    },
+    {
+        "project": "Photo CMS", 
+        "description": "CMS for uploading photos to your website. Built using React with Redux on the front end, and Node with Express on the backend, this app utilizes passport and jwt authentication to create user accounts and update their photo albums to be used in their websites. Endpotints are provided to retrieve the image urls once uploaded. Demo user credentials: email: test@email.com password: password1!",
+        "tools": ["React", "Redux", "SCSS", "Node", "Express", "MongoDB"],
+        "img": "photocmsv2.png",
+        "url": "https://photo-cms.netlify.com/",
+        "code": "https://github.com/James-revans/Photo-cms-front"
     }
 ]
