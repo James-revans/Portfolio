@@ -3,7 +3,7 @@
         <div class="mountain-one p-mountain">
             <div class="snow-one">
                 <div class="snow-one2"></div>
-            </div>
+            </div>  
             <div class="mountain-shadow-one">
                 <div class="snow-shadow-one"></div>
             </div>
@@ -218,8 +218,8 @@ export default {
             position: absolute;
             bottom: -110px;
             top: 84px;
-            left: -70px;
-            width: 117px;
+            left: -75px;
+            width: 121px;
             height: 40px;
             border-radius: 50%;
             z-index: 2;
