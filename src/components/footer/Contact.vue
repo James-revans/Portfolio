@@ -10,7 +10,7 @@
                 <textarea name="message" id="text" placeholder="Message"></textarea>
                 <button type="submit" value="submit" class="contact__content__form__button">SEND MESSAGE</button>
             </form>
-            <div class="contact__content__resume"><a href="https://drive.google.com/file/d/1_2tpbP2D2drFeT6VPYNC1jAVBnIxHVwi/view?usp=sharing" target="_blank">Download Resume</a></div>
+            <div class="contact__content__resume"><a href="https://drive.google.com/file/d/13U-VFwl4u1NC66-7AkhgDfKTPuOs9Su2/view" target="_blank">View Resume</a></div>
         </div>
     </div>
 </template>
