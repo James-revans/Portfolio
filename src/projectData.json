@@ -12,7 +12,7 @@
         "description": "A website for family and friends to vote and guess the gender of my friend's unborn baby. Results were displayed on a TV and guests voted on their phone at the gender reveal party.",
         "tools": ["Vue.js", "SCSS", "HTML5"],
         "img": "hugdahlbaby.png",
-        "url": "https://babyreveal.netlify.com/#/",
+        "url": "",
         "url2": "https://babyreveal.netlify.com/#/vote",
         "code": "https://github.com/James-revans/Baby-Reveal-FrontEnd"
     },

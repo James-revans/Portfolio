@@ -8,7 +8,7 @@
                 <h1>{{ project }}</h1>
                 <h6 v-for="(item, index) in tools" :key="index" class="p-2">{{ item }}</h6>
                 <p>{{ description }}</p>
-                <a target="_blank" v-bind:href="url">VISIT</a>
+                <a v-if="url !== ''" target="_blank" v-bind:href="url">VISIT</a>
                 <a v-if="code !== ''" target="_blank" v-bind:href="code">GITHUB</a>
             </div>
         </div>
