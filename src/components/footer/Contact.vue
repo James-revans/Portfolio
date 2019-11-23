@@ -10,7 +10,7 @@
                 <textarea name="message" id="text" placeholder="Message"></textarea>
                 <button type="submit" value="submit" class="contact__content__form__button">SEND MESSAGE</button>
             </form>
-            <div class="contact__content__resume"><a href="http://evans-james.com/Resume.pdf" download>View Resume</a></div>
+            <div class="contact__content__resume"><a href="http://evans-james.com/Resume.pdf" download target="_blank">View Resume</a></div>
         </div>
     </div>
 </template>
