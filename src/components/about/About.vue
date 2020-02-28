@@ -4,8 +4,8 @@
         <div class="about__text">
             <h1>ABOUT ME</h1>
             
-            <p>Hi! I'm James Evans, a front-end web developer from Seattle, Washington. I'm currently a developer at Qudo Creative where I have contributed to the design and development of projects.
-                I am an experienced developer in the field and have a strong drive for learning new technologies.
+            <p>Hi! I'm James Evans, a front-end web developer from Seattle, Washington. I'm currently a developer at M2 Information Systems and Qudo Creative where I have contributed to the design and development of numerous products using cutting edge frameworks and technologies.  I am an experienced developer in the field and have a strong drive for learning all things web related.
+
             </p>
             <a data-scroll href="#contact" class="about__text__button">CONTACT</a>
         </div>
