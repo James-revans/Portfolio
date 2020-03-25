@@ -21,7 +21,7 @@
          <a data-scroll href="#contact" class="about__text__button">CONTACT</a>
       </div>
       <div class="about__photo">
-         <img src="../../assets/images/NEW_IMAGE.png" />
+         <img src="../../assets/images/james-cutout.png" />
       </div>
    </div>
 </template>
