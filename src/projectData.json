@@ -14,7 +14,7 @@
       "img": "M2Portfolio.png",
       "url": "https://www.m2is.com/",
       "code": ""
-   }
+   },
    {
       "project": "SRG Photo and Video",
       "description": "Photography portfolio website displaying the work of Savanna Grunzke. This site is made using the new Svelte framework and uses the Photo CMS app to update photos.",
