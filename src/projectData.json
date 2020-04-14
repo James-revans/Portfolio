@@ -8,22 +8,13 @@
       "code": ""
    },
    {
-      "project": "Baby Reveal",
-      "description": "A website for family and friends to vote and guess the gender of my friend's unborn baby. Results were displayed on a TV and guests voted on their phone at the gender reveal party.",
-      "tools": ["Vue.js", "SCSS", "HTML5"],
-      "img": "hugdahlbaby.png",
-      "url": "",
-      "url2": "https://babyreveal.netlify.com/#/vote",
-      "code": "https://github.com/James-revans/Baby-Reveal-FrontEnd"
-   },
-   {
-      "project": "Flip Card Memory Game",
-      "description": "A vanilla JavaScipt memory card flip game! Flip one card over to reveal a photo of a dog or cat, then flip over another card to try and find its pair. Try to match all the cards with their pair before the time runs out!",
-      "tools": ["Vanilla JavaScript", "HTML5", "SCSS", "Bootstrap"],
-      "img": "jsMatching.png",
-      "url": "https://javascript-memorygame.netlify.com/",
-      "code": "https://github.com/James-revans/JavaScript-Memory-Game"
-   },
+      "project": "M2 Information Systems",
+      "description": "I am currently on the team recreating the current Microblogging MD app in React Native. The app features secure messaging for hospital employees, clinical alerts, access to callboards, patient lists, and more.",
+      "tools": ["React Native"],
+      "img": "M2Portfolio.png",
+      "url": "https://www.m2is.com/",
+      "code": ""
+   }
    {
       "project": "SRG Photo and Video",
       "description": "Photography portfolio website displaying the work of Savanna Grunzke. This site is made using the new Svelte framework and uses the Photo CMS app to update photos.",
@@ -41,11 +32,20 @@
       "code": "https://github.com/James-revans/Photo-cms-front"
    },
    {
-      "project": "M2 Information Systems",
-      "description": "I am currently on the team recreating the current Microblogging MD app in React Native. The app features secure messaging for hospital employees, clinical alerts, access to callboards, patient lists, and more.",
-      "tools": ["React Native"],
-      "img": "M2Portfolio.png",
-      "url": "https://www.m2is.com/",
-      "code": ""
-   }
+      "project": "Flip Card Memory Game",
+      "description": "A vanilla JavaScipt memory card flip game! Flip one card over to reveal a photo of a dog or cat, then flip over another card to try and find its pair. Try to match all the cards with their pair before the time runs out!",
+      "tools": ["Vanilla JavaScript", "HTML5", "SCSS", "Bootstrap"],
+      "img": "jsMatching.png",
+      "url": "https://javascript-memorygame.netlify.com/",
+      "code": "https://github.com/James-revans/JavaScript-Memory-Game"
+   },
+   {
+      "project": "Baby Reveal",
+      "description": "A website for family and friends to vote and guess the gender of my friend's unborn baby. Results were displayed on a TV and guests voted on their phone at the gender reveal party.",
+      "tools": ["Vue.js", "SCSS", "HTML5"],
+      "img": "hugdahlbaby.png",
+      "url": "",
+      "url2": "https://babyreveal.netlify.com/#/vote",
+      "code": "https://github.com/James-revans/Baby-Reveal-FrontEnd"
+   },
 ]
