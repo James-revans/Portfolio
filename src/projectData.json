@@ -27,7 +27,7 @@
    {
       "project": "SRG Photo and Video",
       "description": "Photography portfolio website displaying the work of Savanna Grunzke. This site is made using the new Svelte framework and uses the Photo CMS app to update photos.",
-      "tools": ["Svelte.js", "SCSS", "HTML5", "Bootstrap"],
+      "tools": ["Svelte.js", "SCSS"],
       "img": "srgphotosv3.png",
       "url": "https://srgphoto.video/",
       "code": "https://github.com/James-revans/Photography-site"
@@ -39,5 +39,13 @@
       "img": "photocmsv2.png",
       "url": "https://photo-cms.netlify.com/",
       "code": "https://github.com/James-revans/Photo-cms-front"
+   },
+   {
+      "project": "M2 Information Systems",
+      "description": "I am currently on the team recreating the current Microblogging MD app in React Native. The app features secure messaging for hospital employees, clinical alerts, access to callboards, patient lists, and more.",
+      "tools": ["React Native"],
+      "img": "M2Portfolio.png",
+      "url": "https://www.m2is.com/",
+      "code": ""
    }
 ]
