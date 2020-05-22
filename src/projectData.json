@@ -1,51 +1,51 @@
 [
-   {
-      "project": "Red Twig Café",
-      "description": "Red Twig is a local cafe whose website I made from the ground up at Qudo Creative. This site includes access to a CMS for the customer to easily change the menu or other aspects of the website at ease. I also contributed to the design of the menu and about page.",
-      "tools": ["Vue.js", "SCSS", "Bootstrap"],
-      "img": "RedTwigPortfolio.png",
-      "url": "https://www.redtwig.com/#/",
-      "code": ""
-   },
-   {
-      "project": "M2 Information Systems",
-      "description": "I am currently on the team recreating the current Microblogging MD app in React Native. The app features secure messaging for hospital employees, clinical alerts, access to callboards, patient lists, and more.",
-      "tools": ["React Native"],
-      "img": "M2Portfolio.png",
-      "url": "https://www.m2is.com/",
-      "code": ""
-   },
-   {
-      "project": "SRG Photo and Video",
-      "description": "Photography portfolio website displaying the work of Savanna Grunzke. This site is made using the new Svelte framework and uses the Photo CMS app to update photos.",
-      "tools": ["Svelte.js", "SCSS"],
-      "img": "srgphotosv3.png",
-      "url": "https://srgphoto.video/",
-      "code": "https://github.com/James-revans/Photography-site"
-   },
-   {
-      "project": "Photo CMS",
-      "description": "CMS for uploading photos to your website. Built using React with Redux on the front end, and Node with Express on the backend, this app utilizes passport and jwt authentication to create user accounts and update their photo albums to be used in their websites. Endpoints are provided to retrieve the image urls once uploaded. Demo user credentials: email: test@email.com password: password1!",
-      "tools": ["React", "Redux", "SCSS", "Node", "Express", "MongoDB"],
-      "img": "photocmsv2.png",
-      "url": "https://photo-cms.netlify.com/",
-      "code": "https://github.com/James-revans/Photo-cms-front"
-   },
-   {
-      "project": "Flip Card Memory Game",
-      "description": "A vanilla JavaScipt memory card flip game! Flip one card over to reveal a photo of a dog or cat, then flip over another card to try and find its pair. Try to match all the cards with their pair before the time runs out!",
-      "tools": ["Vanilla JavaScript", "HTML5", "SCSS", "Bootstrap"],
-      "img": "jsMatching.png",
-      "url": "https://javascript-memorygame.netlify.com/",
-      "code": "https://github.com/James-revans/JavaScript-Memory-Game"
-   },
-   {
-      "project": "Baby Reveal",
-      "description": "A website for family and friends to vote and guess the gender of my friend's unborn baby. Results were displayed on a TV and guests voted on their phone at the gender reveal party.",
-      "tools": ["Vue.js", "SCSS", "HTML5"],
-      "img": "hugdahlbaby.png",
-      "url": "",
-      "url2": "https://babyreveal.netlify.com/#/vote",
-      "code": "https://github.com/James-revans/Baby-Reveal-FrontEnd"
-   }
+    {
+        "project": "Red Twig Café",
+        "description": "Red Twig is a local cafe whose website I made from the ground up at Qudo Creative. This site includes access to a CMS for the customer to easily change the menu or other aspects of the website at ease. I also contributed to the design of the menu and about page.",
+        "tools": ["Vue.js", "SCSS", "Bootstrap"],
+        "img": "RedTwigPortfolio.png",
+        "url": "https://www.redtwig.com/#/",
+        "code": ""
+    },
+    {
+        "project": "M2 Information Systems",
+        "description": "I am currently on the team recreating the current Microblogging MD app in React Native. The app features secure messaging for hospital employees, clinical alerts, access to callboards, patient lists, and more.",
+        "tools": ["React Native"],
+        "img": "M2Portfolio.png",
+        "url": "https://www.m2is.com/",
+        "code": ""
+    },
+    {
+        "project": "SRG Photo and Video",
+        "description": "Photography portfolio website displaying the work of Savanna Grunzke. This site is made using the new Svelte framework and uses the Photo CMS app to update photos.",
+        "tools": ["Svelte.js", "SCSS"],
+        "img": "srgphotosv3.png",
+        "url": "https://srgphoto.video/",
+        "code": "https://github.com/James-revans/Photography-site"
+    },
+    {
+        "project": "Photo CMS",
+        "description": "CMS for uploading photos to your website. Built using React with Redux on the front end, and Node with Express on the backend, this app utilizes passport and jwt authentication to create user accounts and update their photo albums to be used in their websites. Endpoints are provided to retrieve the image urls once uploaded. Demo user credentials: email: test@email.com password: password1!",
+        "tools": ["React", "Redux", "SCSS", "Node", "Express", "MongoDB"],
+        "img": "photocmsv2.png",
+        "url": "https://photo-cms.netlify.com/",
+        "code": "https://github.com/James-revans/Photo-cms-front"
+    },
+    {
+        "project": "Qudo Creative Landing Page",
+        "description": "Interim landing page for Qudo Creative Creative Agency built in Svelte.",
+        "tools": ["Svelte", "SCSS"],
+        "img": "QudoCreative.png",
+        "url": "https://qudocreative.io/",
+        "code": ""
+    },
+    {
+        "project": "Baby Reveal",
+        "description": "A website for family and friends to vote and guess the gender of my friend's unborn baby. Results were displayed on a TV and guests voted on their phone at the gender reveal party.",
+        "tools": ["Vue.js", "SCSS", "HTML5"],
+        "img": "hugdahlbaby.png",
+        "url": "",
+        "url2": "https://babyreveal.netlify.com/#/vote",
+        "code": "https://github.com/James-revans/Baby-Reveal-FrontEnd"
+    }
 ]
