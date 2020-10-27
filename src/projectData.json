@@ -1,18 +1,26 @@
 [
     {
+        "project": "Amazon Brand Services",
+        "description": "brandservices.amazon.com showcases the various services that Amazon sellers can take advantage of while selling their products through Amazon. This website is deployed in 18 different countries and has multilanguage support based on the user's locale.",
+        "tools": ["React", "SCSS"],
+        "img": "BrandServices.png",
+        "url": "https://brandservices.amazon.com/?ref=Rzw4JkZ2NXIBhAe90EUIqVpst9",
+        "code": ""
+    },
+    {
+        "project": "M2 Information Systems",
+        "description": "I was previously on the team recreating the current Microblogging MD app in React Native. The app features secure messaging for hospital employees, clinical alerts, access to callboards, patient lists, and more.",
+        "tools": ["React Native"],
+        "img": "M2Portfolio.png",
+        "url": "https://www.m2is.com/",
+        "code": ""
+    },
+    {
         "project": "Red Twig Café",
         "description": "Red Twig is a local cafe whose website I made from the ground up at Qudo Creative. This site includes access to a CMS for the customer to easily change the menu or other aspects of the website at ease. I also contributed to the design of the menu and about page.",
         "tools": ["Vue.js", "SCSS", "Bootstrap"],
         "img": "RedTwigPortfolio.png",
         "url": "https://www.redtwig.com/#/",
-        "code": ""
-    },
-    {
-        "project": "M2 Information Systems",
-        "description": "I am currently on the team recreating the current Microblogging MD app in React Native. The app features secure messaging for hospital employees, clinical alerts, access to callboards, patient lists, and more.",
-        "tools": ["React Native"],
-        "img": "M2Portfolio.png",
-        "url": "https://www.m2is.com/",
         "code": ""
     },
     {
@@ -38,14 +46,5 @@
         "img": "QudoCreative.png",
         "url": "https://qudocreative.io/",
         "code": ""
-    },
-    {
-        "project": "Baby Reveal",
-        "description": "A website for family and friends to vote and guess the gender of my friend's unborn baby. Results were displayed on a TV and guests voted on their phone at the gender reveal party.",
-        "tools": ["Vue.js", "SCSS", "HTML5"],
-        "img": "hugdahlbaby.png",
-        "url": "",
-        "url2": "https://babyreveal.netlify.com/#/vote",
-        "code": "https://github.com/James-revans/Baby-Reveal-FrontEnd"
     }
 ]
