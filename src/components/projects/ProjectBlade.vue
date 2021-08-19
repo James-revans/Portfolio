@@ -1,54 +1,63 @@
 <template>
     <div class="blade">
-        <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="800" data-sal-easing="ease-out-bounce" class="blade__img">
+        <div
+            data-sal="slide-right"
+            data-sal-delay="100"
+            data-sal-duration="800"
+            data-sal-easing="ease-out-bounce"
+            class="blade__img"
+        >
             <div @click="viewMore = true" class="blade__img__link">
                 <p class="pontano">{{ project }}</p>
                 <button>VIEW MORE</button>
             </div>
-            <img class="" :src="getImgUrl()">
-            <div class="blade__img__tools"><h6 v-for="(item, index) in tools" :key="index" class="p-2">{{ item }}</h6></div>
+            <img class="" :src="getImgUrl()" />
+            <div class="blade__img__tools">
+                <h6 v-for="(item, index) in tools" :key="index" class="p-2">
+                    {{ item }}
+                </h6>
+            </div>
         </div>
-        <ProjectModal v-if="viewMore" v-on:closeModal="closeModal"
-        :project="project"
-        :description="description"
-        :tools="tools"  
-        :img="img"
-        :url="url"
-        :code="code"/>
+        <ProjectModal
+            v-if="viewMore"
+            v-on:closeModal="closeModal"
+            :project="project"
+            :description="description"
+            :tools="tools"
+            :img="img"
+            :url="url"
+            :code="code"
+        />
     </div>
 </template>
 
 <script>
+import ProjectModal from '@/components/projects/ProjectModal';
+import sal from 'sal.js';
 
-import ProjectModal from "@/components/projects/ProjectModal";
-import sal from "sal.js";
-
-export default {    
+export default {
     props: ['project', 'description', 'tools', 'img', 'url', 'code'],
     components: {
-        ProjectModal
-
+        ProjectModal,
     },
     data() {
         return {
-            viewMore: false
-            
-        }
+            viewMore: false,
+        };
     },
     methods: {
         getImgUrl() {
-            return require('../../assets/images/' + this.img)
+            return require('../../assets/images/' + this.img);
         },
         closeModal() {
             this.viewMore = false;
             document.body.style.overflowY = 'scroll';
-        }
-
+        },
     },
     mounted() {
         sal();
-    }
-}
+    },
+};
 </script>
 
 <style lang="scss">
@@ -56,16 +65,19 @@ export default {
     position: relative;
     padding: 25px;
     width: 500px;
+    height: 280px;
 
     &__img {
         position: relative;
-        width: 100%;
-        
+        height: 100%;
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
+
             border-radius: 2px;
             border: solid 1px rgb(199, 199, 199);
-            box-shadow: 0px 2px 12px 2px rgb(196, 196, 196); 
+            box-shadow: 0px 2px 12px 2px rgb(196, 196, 196);
         }
 
         &__tools {
@@ -91,7 +103,7 @@ export default {
             width: 100%;
             height: 100%;
             border-radius: 2px;
-            background: #000E30;
+            background: #000e30;
             opacity: 0;
             z-index: 1;
             transition: 0.6s;
@@ -106,7 +118,6 @@ export default {
                 font-weight: 100;
                 @media only screen and (max-width: 800px) {
                     font-size: 20px;
-
                 }
             }
             button {
@@ -122,7 +133,7 @@ export default {
                 &:hover {
                     transition: 0.3s;
                     background: white;
-                    color: #000E30; 
+                    color: #000e30;
                 }
                 @media only screen and (max-width: 800px) {
                     font-size: 12px;
@@ -136,12 +147,10 @@ export default {
                 transition: 0.5s;
                 cursor: pointer;
             }
-
         }
         @media only screen and (max-width: 800px) {
             width: 100%;
         }
     }
 }
-
 </style>

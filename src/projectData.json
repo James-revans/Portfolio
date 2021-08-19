@@ -1,5 +1,13 @@
 [
     {
+        "project": "Amazon Alexa",
+        "description": "Alexa Skills Kit is the environment for creating skills through Alexa. Skills are like apps, and they allow you customize your experience with Alexa.",
+        "tools": ["React"],
+        "img": "AmazonAlexa.png",
+        "url": "https://developer.amazon.com/en-US/alexa/alexa-skills-kit?",
+        "code": ""
+    },
+    {
         "project": "Amazon Brand Services",
         "description": "brandservices.amazon.com showcases the various services that Amazon sellers can take advantage of while selling their products through Amazon. This website is deployed in 18 different countries and has multilanguage support based on the user's locale.",
         "tools": ["React", "SCSS"],
